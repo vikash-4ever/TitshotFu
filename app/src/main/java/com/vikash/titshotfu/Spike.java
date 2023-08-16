@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import java.util.Random;
 public class Spike {
-    Bitmap spike[] = new Bitmap[3];
+    Bitmap[] spike = new Bitmap[3];
     int spikeFrame = 0;
     int spikeX, spikeY, spikeVelocity;
     Random random;

@@ -3,7 +3,6 @@ package com.vikash.titshotfu;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -33,7 +32,7 @@ public class GameOver extends AppCompatActivity {
             highest = points;
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putInt("highest", highest);
-            editor.commit();
+            editor.apply();
         }
         tvHighest.setText("" + highest);
     }

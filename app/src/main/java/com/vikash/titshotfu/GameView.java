@@ -53,12 +53,7 @@ public class GameView extends View {
         rectBackground = new Rect(0, 0, dWidth, dHeight);
         rectGround = new Rect(0, dHeight - ground.getHeight(), dWidth, dHeight);
         handler = new Handler();
-        runnable = new Runnable() {
-            @Override
-            public void run() {
-                invalidate();
-            }
-        };
+        runnable = this::invalidate;
         textPaint.setColor(Color.rgb(168, 49, 73));
         textPaint.setTextSize(TEXT_SIZE);
         textPaint.setTextAlign(Paint.Align.LEFT);
